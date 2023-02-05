@@ -1,0 +1,31 @@
+<Html>
+    <head>
+        <script>
+            var employee={
+                salary:70000,
+                getSalary:function(){
+                    console.log(this.salary)
+                }
+            }
+            employee.getSalary();
+            var employee1={
+                salary:40000
+            }
+            var employee2={
+                salary:50000
+            }
+            var employee3={
+                salary:60000
+            }
+            employee.getSalary.call(employee1);
+            employee.getSalary.apply(employee2);
+            var func =employee.getSalary.bind(employee3);
+            func();
+
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</Html>
