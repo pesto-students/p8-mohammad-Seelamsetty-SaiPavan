@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Saipavan Website</title>
+    <style>
+        .head1 {
+            font-size:40px;
+            font-weight:bold;
+            text-align: center;
+        }
+        .head2 {
+            font-size:17px;
+            margin-left:10px;
+            margin-bottom:15px;
+            text-align: center;
+        }
+        body {
+            margin: 0 auto;
+            background-position:center;
+            background-size: contain;
+        }
+        body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text],[type=tel],[type=email],[type=password], select, textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+      
+        .leftpane {
+  width: 50%;
+  height: 100vh;
+  padding-left: 20px;
+}
+
+
+
+.rightpane {
+  width: 50%;
+  height: 50vh;
+  padding-left: 20px;
+}
+
+body {
+  margin: 0!important;
+}
+
+.d-flex {
+  display: flex;
+}
+
+#contactusform
+{
+    padding-left: 20px;
+}
+    </style>
+</head>
+  
+<body>
+      
+    <!-- Header Section -->
+    <header>
+        <div class="head1">Web Development</div>
+        <div class="head2">Learning Web Development Easy</div>
+    </header>
+      
+    <div class="container">
+        <div class="d-flex">
+          <div class="leftpane">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+             <img src="https://avatars.mds.yandex.net/i?id=84dbd50839c3d640ebfc0de20994c30d-4473719-images-taas-consumers&n=27&h=480&w=480">  
+        </div>
+          <div class="rightpane">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+             <br>
+             <h3>Test Title one</h3>
+             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+             <br>
+             <h3>Test Title Two</h3>
+             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+          </div>
+          
+        </div>
+
+      </div>
+      <div id="contactusform">
+      <form class="form-control">
+      <label for="Title">Title</label>
+        <input type="radio" name="gender" id="male"> 
+        <label for="male">Mr</label>
+        
+        <input type="radio" name="gender" id="female"> 
+        <label for="female">Mrs</label>
+
+        <input type="radio" name="gender" id="miss"> 
+        <label for="female">Miss</label><br>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" value="Doe"><br>
+
+        <label for="phone">phone number:</label>
+
+    <input type="tel" id="phone" name="phone"
+       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+       required><br>
+       <label for="email">Email:</label>
+
+<input type="email" id="email"
+       pattern=".+@gmail\.com" size="30" required><br>
+       <label for="pass">Password</label>
+       <input type="password" id="pass" name="password"
+              minlength="8" required><br>
+              <label for="pass">Confirm your Password</label>
+       <input type="password" id="confirmpass" name="password"
+              minlength="8" required><br>
+              <label for="Country">Country</label>
+
+              <select name="country" class="form-control" id="country">
+                <option value="0" label="Select a country ... " selected="selected">Select a country ... </option>
+                <optgroup id="country-optgroup-Asia" label="Asia">
+                    <option value="ind" label="India">India</option>
+                    <option value="sl" label="Srilanka">SriLanka</option>
+                </optgroup>
+                </select>
+                <div class="tacbox">
+                    <input id="checkbox" type="checkbox" />
+                    <label for="checkbox"> I agree to these <a href="#">Terms and Conditions</a>.</label>
+                  </div><br>
+        <input type="submit" value="Submit">
+
+        </form>
+        </div>
+</body>
+</html>
